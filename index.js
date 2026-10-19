@@ -2,4 +2,7 @@
 function greet(name) {
   return `Hello, ${name}, from aurora-web`;
 }
-module.exports = { greet };
+function health() {
+  return { status: 'ok', service: 'aurora-web' };
+}
+module.exports = { greet, health };
